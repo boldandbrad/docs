@@ -104,6 +104,8 @@ Activate venv (macOS/linux):
 
 ```zsh
 source .venv/bin/activate
+# or
+. .venv/bin/activate
 ```
 
 Activate venv (windows):
