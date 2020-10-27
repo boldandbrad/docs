@@ -1,0 +1,3 @@
+
+MD026: false # allow trailing punctuation
+MD041: false # allow non-headers as first lines
