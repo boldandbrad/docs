@@ -9,6 +9,6 @@
     - [Visual Studio Code](machine-setup/tool-setup/vscode.md)
 
 - Guides
-  - [Angular](guides/angular.md "Angular Guide")
-  - [git](guides/git.md "git Guide")
-  - [python](guides/python.md "python Guide")
+  - [Node.js](guides/nodejs.md "Node.js Guide")
+  - [Git](guides/git.md "git Guide")
+  - [Python](guides/python.md "python Guide")
