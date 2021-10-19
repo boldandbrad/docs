@@ -1,5 +1,0 @@
-# Vscode
-
-## Extensions
-
-> Coming soon.

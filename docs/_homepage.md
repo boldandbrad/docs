@@ -1,3 +1,3 @@
 # docs
 
-> Opinionated development guides and docs.
+> Opinionated software development guides and docs.
