@@ -35,7 +35,6 @@
   - K8s/Minicube
   - Multistage builds
 - Nodejs
-  - npm vs yarn
   - Vuejs
     - Nuxtjs
   - Angular

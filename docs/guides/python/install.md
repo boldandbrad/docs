@@ -1,6 +1,7 @@
 # Python Install
 
-Install [`pyenv`](https://github.com/pyenv/pyenv) to manage multiple installs of python.
+Install [`pyenv`](https://github.com/pyenv/pyenv) to manage multiple installs of
+python.
 
 ## Prerequisites
 
@@ -58,18 +59,18 @@ Install [`pyenv`](https://github.com/pyenv/pyenv) to manage multiple installs of
 
 ## Install python
 
-1. Check what versions of python 3+ are available
+1. Check what versions of python are available
 
     macOS:
 
     ```zsh
-    pyenv install -l | grep '^\s*3[.0-9]*'
+    pyenv install -l | grep '^\s*[.0-9]*$'
     ```
 
     Windows:
 
     ```cmd
-    pyenv install -l | findstr "^\s*3[.0-9]*"
+    pyenv install -l | findstr "^\s*[.0-9]*$"
     ```
 
 2. Install a python version
@@ -78,12 +79,17 @@ Install [`pyenv`](https://github.com/pyenv/pyenv) to manage multiple installs of
     pyenv install <VERSION>
     ```
 
-    <!-- TODO: add note for manually installing old versions into correct dir on windows -->
+    <!-- TODO: add note for manually installing old versions into correct dir
+    on windows -->
 
 3. Set and verify global python version
 
     ```zsh
     pyenv global <VERSION>
+    ```
+
+    ```zsh
+    pyenv versions
     ```
 
     ```zsh

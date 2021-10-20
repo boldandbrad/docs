@@ -30,19 +30,17 @@ curl -s "https://get.sdkman.io" | bash
 
 Install the following with `brew cask install <name>`
 
-* adobe-acrobat-reader
 * appcleaner
-* authy
 * discord
 * docker
-* dropbox
 * firefox
 * github
 * [hyper](https://hyper.is/)
 * inkscape
+* insomnia
 * intellij-idea-ce
 * obs
-* postgres
+* postico
 * postman
 * spotify
 * streamlabs-obs
@@ -62,6 +60,7 @@ Install the following with `brew install <name>`
 * minikube
   * `minikube config set driver virtualbox`
 * nodenv
+* postgresql
 * pyenv
 * speedtest
 * spotify-tui
