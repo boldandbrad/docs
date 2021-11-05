@@ -1,4 +1,4 @@
-# Nodejs Install
+# Vue.js Install
 
 Install `nodenv` to manage multiple installs of Nodejs.
 
@@ -73,4 +73,10 @@ Install `nodenv` to manage multiple installs of Nodejs.
 
 ```zsh
 npm install -g npm
+```
+
+## Install Vue CLI
+
+```zsh
+npm install -g @vue/cli
 ```

@@ -18,19 +18,21 @@ Install [Homebrew](https://brew.sh) :beer: package manager.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-### SDKMan (Java)
+<!-- ### SDKMan (Java)
 
 Install [sdkman](https://sdkman.io/).
 
 ```zsh
 curl -s "https://get.sdkman.io" | bash
-```
+``` -->
 
 ### Apps
 
-Install the following with `brew cask install <name>`
+Install the following with `brew install --cask <name>`
 
-* appcleaner
+* alfred
+* appcleaner - quickly delete apps and their scattered data
+* bartender
 * discord
 * docker
 * firefox
@@ -39,14 +41,15 @@ Install the following with `brew cask install <name>`
 * inkscape
 * insomnia
 * intellij-idea-ce
-* obs
 * postico
 * postman
+* raspberry-pi-imager
 * spotify
 * streamlabs-obs
 * twitch
-* virtualbox
 * visual-studio-code
+
+<!-- * virtualbox -->
 
 ### CLIs
 
@@ -54,27 +57,25 @@ Install the following with `brew install <name>`
 
 * bat
 * gh
-* goenv
 * jq
-* kubernetes-cli
-* minikube
-  * `minikube config set driver virtualbox`
 * nodenv
 * postgresql
 * pyenv
+* spaceship
 * speedtest
-* spotify-tui
 * travis
 * wifi-password
 * wget
+* zsh-autosuggestions
 * zsh-syntax-highlighting
 
-## Tool Setup
+<!-- * helm
+* kubernetes-cli
+* minikube
+  * `minikube config set driver virtualbox` -->
 
-### Zsh
+### Tool Setup
 
-> Coming soon.
-
-### Hyper
+#### Zsh
 
 > Coming soon.

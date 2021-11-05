@@ -61,6 +61,20 @@
   - Settings
   - Fonts
 
+## Run Locally
+
+1. Install docsify-cli
+
+    ```zsh
+    npm install -g docsify-cli
+    ```
+
+2. Serve docs on `localhost:3000`
+
+    ```zsh
+    docsify serve docs
+    ```
+
 ## License
 
 [MIT](LICENSE)
