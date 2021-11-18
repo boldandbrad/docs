@@ -7,7 +7,7 @@ Setup a new macOS environment.
 ### Xcode CLI tools
 
 ```zsh
-xcode-select -install
+xcode-select --install
 ```
 
 ### Homebrew
