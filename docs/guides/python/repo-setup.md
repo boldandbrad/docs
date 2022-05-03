@@ -60,7 +60,7 @@ Setup a local python dev env.
 
 6. Create a `setup.py`
 
-    [setup.py gist](https://gist.github.com/bradleycwojcik/538236e794f544f8fe9df0e8bde4c3f2)
+    [setup.py gist](https://gist.github.com/boldandbrad/538236e794f544f8fe9df0e8bde4c3f2)
 
 7. Run pip-compile:
 

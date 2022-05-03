@@ -1,6 +1,6 @@
 # docs
 
-[![Docs](https://img.shields.io/website?down_message=down&label=status&up_message=online&url=https%3A%2F%2Fbradleycwojcik.github.io%2Fdocs%2F)](https://bradleycwojcik.github.io/docs/)
+[![Docs](https://img.shields.io/website?down_message=down&label=status&up_message=online&url=https%3A%2F%2Fboldandbrad.github.io%2Fdocs%2F)](https://boldandbrad.github.io/docs/)
 
 > Opinionated development guides and docs.
 
@@ -28,6 +28,7 @@
   - logging
   - testing
   - ci/cd w/ travis ci
+  - homebrew tap creation
 - Docker
   - Install
   - Simple containers

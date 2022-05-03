@@ -7,7 +7,7 @@
     Pull `.gitconfig` starter from gist and save it to `~/`
 
     ```zsh
-    wget -O ~/.gitconfig https://gist.githubusercontent.com/bradleycwojcik/538236e794f544f8fe9df0e8bde4c3f2/raw
+    wget -O ~/.gitconfig https://gist.githubusercontent.com/boldandbrad/538236e794f544f8fe9df0e8bde4c3f2/raw
     ```
 
     The starter config sets reasonable default behavior, creates aliases for
