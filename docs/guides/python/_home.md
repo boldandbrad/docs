@@ -1,5 +1,6 @@
 # Python Guide
 
+* [`pyenv`](https://github.com/pyenv/pyenv) - manage multiple global python installs.
 * [`venv`](https://github.com/python/cpython/tree/master/Lib/venv) - create
     project specific environments
   * Included with python

@@ -1,3 +1,0 @@
-# Docker Guide
-
-> Coming soon.

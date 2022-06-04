@@ -48,9 +48,17 @@ pip install <PACKAGE_NAME>
 
 ## Homebrew Formulae
 
-<!-- TODO: add steps for creating a submitting homebrew formulae -->
+Install `homebrew-pypi-poet`
 
-> Coming soon.
+```zsh
+pip install homebrew-pypi-poet
+```
+
+Generate a python homebrew formula for your package
+
+```zsh
+poet -f <PACKAGE_NAME>
+```
 
 ## Chocolatey Package
 

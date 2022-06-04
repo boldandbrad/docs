@@ -2,6 +2,8 @@
 
 ## General
 
+<!-- TODO: update this list to reflect extensions available for vscodium -->
+
 - [Back & Forth](https://marketplace.visualstudio.com/items?itemName=nick-rudenko.back-n-forth)
 - [Bracket Peek](https://marketplace.visualstudio.com/items?itemName=jomeinaster.bracket-peek)
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
