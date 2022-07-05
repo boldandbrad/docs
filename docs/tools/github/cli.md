@@ -1,3 +1,3 @@
-# Git Guide
+# GitHub CLI
 
 > Coming soon.
