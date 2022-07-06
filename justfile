@@ -1,3 +1,3 @@
 
 serve:
-    docsify serve docs
+    docsify serve --open --port 3001 docs

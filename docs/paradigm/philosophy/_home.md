@@ -1,4 +1,4 @@
-# Paradigm
+# Philosophy
 
 Just a list of things I care about for now...
 
