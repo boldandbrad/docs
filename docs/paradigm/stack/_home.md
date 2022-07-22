@@ -16,6 +16,7 @@ multiple domains.
 
 ## Recurring Tools
 
+- Vercel - deployments and hosting
 - Vite - next generation frontend tooling
 - Vue.js (3.x) - progressive frontend framework
 - Typescript - type friendly superset of JS
@@ -30,6 +31,7 @@ multiple domains.
 - Vite - next generation frontend tooling
 - Vue.js (3.x) - progressive frontend framework
 - Typescript - type friendly superset of JS
+- PostCSS - CSS transformation with JS
 - Tailwind CSS - fast and flexible css framework
 
 ### Desktop
@@ -38,6 +40,7 @@ multiple domains.
 - Vite - next generation frontend tooling
 - Vue.js (3.x) - progressive frontend framework
 - Typescript - type friendly superset of JS
+- PostCSS - CSS transformation with JS
 - Tailwind CSS - fast and flexible css framework
 - Rust - reliable, preformant, and versatile language
 
@@ -57,6 +60,7 @@ multiple domains.
 ### DB
 
 - Postgres
+- Thin Backend - instant apis for postgres dbs
 
 ### Scripts
 
