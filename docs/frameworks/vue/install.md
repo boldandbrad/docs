@@ -1,4 +1,4 @@
-# Vue.js Install
+# Vue Install
 
 Install `nodenv` to manage multiple installs of Nodejs.
 

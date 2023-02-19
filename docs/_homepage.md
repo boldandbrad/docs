@@ -1,6 +1,6 @@
-# docs
+# boldandbrad docs
 
-> Opinionated software development guides and docs.
+> Opinionated technical guides and docs.
 
 ## Principles
 
@@ -11,9 +11,9 @@
 
 ## Overview
 
-This is my personal software and dev process documentation. I have made it open
-source to serve as an example to others. I do not claim to be an expert
-on any of the covered topics, nor do I always follow industry best practices.
+This repo hosts my personal technical documentation. I have made it open source
+to serve as an example for others. I do not claim to be an expert on any of the
+covered topics, nor do I always follow industry best practices.
 **Use this knowledge base at your own risk**.
 
 With that said, I regularly update this repo as I discover better tools and

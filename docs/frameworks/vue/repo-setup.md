@@ -1,6 +1,6 @@
 # Repo Setup
 
-Create Vue.js 3 + Typescript project with Vite.
+Create a Vue 3 + Typescript project with Vite.
 
 ```zsh
 pnpm create vite app-name --template vue-ts

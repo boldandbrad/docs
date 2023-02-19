@@ -18,7 +18,7 @@ multiple domains.
 
 - Vercel - deployments and hosting
 - Vite - next generation frontend tooling
-- Vue.js (3.x) - progressive frontend framework
+- Vue 3+ - progressive frontend framework
 - Typescript - type friendly superset of JS
 - Tailwind CSS - fast and flexible css framework
 - Rust - fast and safe general purpose language
@@ -29,7 +29,7 @@ multiple domains.
 ### Web
 
 - Vite - next generation frontend tooling
-- Vue.js (3.x) - progressive frontend framework
+- Vue 3+ - progressive frontend framework
 - Typescript - type friendly superset of JS
 - PostCSS - CSS transformation with JS
 - Tailwind CSS - fast and flexible css framework
@@ -38,7 +38,7 @@ multiple domains.
 
 - Tauri - secure, performant, cross platform app framework
 - Vite - next generation frontend tooling
-- Vue.js (3.x) - progressive frontend framework
+- Vue 3+ - progressive frontend framework
 - Typescript - type friendly superset of JS
 - PostCSS - CSS transformation with JS
 - Tailwind CSS - fast and flexible css framework

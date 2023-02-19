@@ -6,9 +6,13 @@
 
 - Environments
 
-  - [Debian](environments/deb/_home.md 'Debian Linux')
-  - [macOS](environments/mac/_home.md 'macOS')
-  - [Raspberry Pi OS](environments/pi/_home.md 'Raspberry Pi')
+  - [macOS](environments/macos/_home.md 'macOS')
+  - [Raspberry Pi OS](environments/raspberry-pi-os/_home.md 'Raspberry Pi')
+  - [Ubuntu Server](environments/ubuntu-server/_home.md 'Ubuntu Server')
+
+- Services
+
+  - [Minecraft Server](services/minecraft-server/_home.md 'Minecraft Server')
 
 - Languages
 
@@ -21,7 +25,7 @@
 
   - [Tauri](frameworks/tauri/_home.md 'Tauri')
   - [Vite](frameworks/vite/_home.md 'Vite')
-  - [Vue.js](frameworks/vuejs/_home.md 'Vue.js')
+  - [Vue](frameworks/vue/_home.md 'Vue')
 
 - Tools
 
