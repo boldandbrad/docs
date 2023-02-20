@@ -9,6 +9,7 @@
   - [macOS](environments/macos/_home.md 'macOS')
   - [Raspberry Pi OS](environments/raspberry-pi-os/_home.md 'Raspberry Pi')
   - [Ubuntu Server](environments/ubuntu-server/_home.md 'Ubuntu Server')
+  - [Windows](environments/windows/_home.md 'Windows')
 
 - Services
 

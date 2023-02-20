@@ -24,7 +24,11 @@ on this page are compatible with both Fabric and Quilt mod loaders.
         - [Cloth Config](https://modrinth.com/mod/cloth-config)
 - [QuickHomes](https://beta.curseforge.com/minecraft/mc-mods/quickhomes) - set
   and teleport to your home
+- [QuickSpawns](https://www.curseforge.com/minecraft/mc-mods/quickspawns) -
+  teleport to world spawn
 - [EditSign](https://modrinth.com/mod/editsign) - edit signs without replacing
+- [SetWorldSpawnPoint](https://modrinth.com/mod/set-world-spawn-point) - set
+  exact world spawn point
 
 > Additional Quilt server side mods can be found [here](https://serverside.infra.link).
 

@@ -24,6 +24,10 @@ systemctl stop minecraft
 systemctl restart minecraft
 ```
 
+## Backup
+
+> Coming soon.
+
 ## Update
 
 > Coming soon.
