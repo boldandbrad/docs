@@ -2,16 +2,22 @@
 
 ## Networking
 
-Get internal IP Address:
+Get internal IP Addresses (v4 & v6):
 
 ```bash
 hostname -I
 ```
 
-Get external IP Address:
+Get external IP Address (v4):
 
 ```bash
-curl https://ifconfig.me
+curl v4.ident.me
+```
+
+Get external IP Address (v6):
+
+```bash
+curl v6.ident.me
 ```
 
 Get current network devices and interfaces:

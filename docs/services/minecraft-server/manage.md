@@ -3,19 +3,25 @@
 ## Status
 
 ```bash
-systemctl status minecraft-server.service
+systemctl status minecraft
 ```
 
 ## Start
 
 ```bash
-systemctl start minecraft-server.service
+systemctl start minecraft
 ```
 
 ## Stop
 
 ```bash
-systemctl stop minecraft-server.service
+systemctl stop minecraft
+```
+
+## Restart
+
+```bash
+systemctl restart minecraft
 ```
 
 ## Update
