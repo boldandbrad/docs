@@ -1,5 +1,7 @@
 # Ubuntu Server Setup
 
+Setup a new Ubuntu Server environment.
+
 ## Create Ubuntu Server Install Media
 
 > TODO: Add format USB drive steps?

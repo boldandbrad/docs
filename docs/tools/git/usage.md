@@ -1,22 +1,17 @@
 # Git Usage
 
-concepts/practices
+Topics to cover:
 
-Create new local repository
-
-gitignores
-
-new feature
-
-rebasing
-
-merging
-
-conflicts
-
-prs/code reviews
-
-gh cli?
+- concepts/practices
+- gitignores
+- new feature
+- git flow
+- rebasing
+- merging
+- conflicts
+- prs/code reviews
+- creating and applying patches
+- stashing/unstashing
 
 ## Amend Commit Message
 

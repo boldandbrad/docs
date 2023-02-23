@@ -1,5 +1,9 @@
 # Set Static IP Address
 
+This guide covers how to setup a static IP address in Ubuntu Server. It is also
+possible, and recommended, to reserve a static IP address for the machine in
+your router settings.
+
 > Ubuntu 17+ uses `netplan` utility to perform network configurations.
 
 ## Setup

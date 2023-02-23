@@ -1,6 +1,6 @@
 # Raspberry Pi OS Setup
 
-Setup a new Raspberry Pi env.
+Setup a new Raspberry Pi environment.
 
 ## SD Card Setup
 
