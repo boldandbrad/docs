@@ -1,5 +1,7 @@
 # Server Management
 
+Commands for managing the minecraft server.
+
 ## Status
 
 ```bash
