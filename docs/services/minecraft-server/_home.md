@@ -1,13 +1,12 @@
 # Minecraft Server
 
-This document walks through installing and running a dedicated Minecraft Java Edition
-Server on an Ubuntu Server host. I prefer Ubuntu Server as host because it is
-lightweight and not windows.
+This document walks through installing and running a dedicated Minecraft Java
+Edition Server on an Ubuntu Server host. I prefer Ubuntu Server as host because
+it is lightweight and also not windows.
 
 The modding toolchain and server launcher used in this tutorial is [QuiltMC](https://quiltmc.org/en/).
 Quilt provides an installer that makes setup and maintenance simpler, while
-offering compatibility
-with Fabric API mods.
+offering compatibility with Fabric API mods.
 
 > Note: QuiltMC is still in beta. Though I have not run into any compatibility
 > or stability issues with the [mods](services/minecraft-server/mods.md) I use,
@@ -110,4 +109,4 @@ In order for the minecraft server to be accessible beyond the local network, the
 service must be forwarded to a port externally. This is typically handled in your
 router settings, which differ greatly depending on brand and model.
 
-Generalized instructions for this section are coming soon.
+> Generalized instructions for this section are coming soon.

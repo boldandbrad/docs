@@ -1,6 +1,6 @@
 # Mods
 
-Install server side mods that optimze and improve gameplay. All mods recommended
+Install server-side mods that optimze and improve gameplay. All mods recommended
 on this page are compatible with both Fabric and Quilt mod loaders.
 
 ## Useful mods
@@ -35,13 +35,13 @@ on this page are compatible with both Fabric and Quilt mod loaders.
   - Deps:
     - [Collective](https://modrinth.com/mod/collective)
 
-> Additional Quilt server side mods can be found [here](https://serverside.infra.link).
+> Additional Quilt server-side mods can be found [here](https://serverside.infra.link).
 
 ## Install
 
-Minecraft Server side mods simply need to be downloaded and placed in the
-server's `mods` folder. Follow the guides below to download mods from the
-command line. It is also possible to install them via [SFTP](environments/ubuntu-server/setup-sftp.md)
+Minecraft server-side mods simply need to be downloaded and placed in the
+server's `mods` folder. Follow the guides below to download and install mods
+from the command line. It is also possible to install them via [SFTP](environments/ubuntu-server/setup-sftp.md)
 if you have that setup on your host.
 
 > Be sure to also download any mod dependencies.

@@ -2,34 +2,44 @@
 
 Commands for managing the minecraft server.
 
-## Status
+## Service Commands
 
-```bash
-systemctl status minecraft
-```
+- Status:
 
-## Start
+    ```bash
+    systemctl status minecraft
+    ```
 
-```bash
-systemctl start minecraft
-```
+- Start:
 
-## Stop
+    ```bash
+    systemctl start minecraft
+    ```
 
-```bash
-systemctl stop minecraft
-```
+- Stop:
 
-## Restart
+    ```bash
+    systemctl stop minecraft
+    ```
 
-```bash
-systemctl restart minecraft
-```
+- Restart
 
-## Backup
+    ```bash
+    systemctl restart minecraft
+    ```
 
-> Coming soon.
+## World Management
 
-## Update
+- Backup:
 
-> Coming soon.
+    > Coming soon.
+
+- Swap:
+
+    > Coming soon.
+
+## Minecraft Versions
+
+- Update Server:
+
+    > Coming soon.
