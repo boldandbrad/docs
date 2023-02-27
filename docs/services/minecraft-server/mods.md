@@ -30,10 +30,10 @@ on this page are compatible with both Fabric and Quilt mod loaders.
   - Deps:
     - [Cloth Config](https://modrinth.com/mod/cloth-config) (optional)
     - [Mod Menu](https://modrinth.com/mod/modmenu/versions) (client optional)
-- [SetWorldSpawnPoint](https://modrinth.com/mod/set-world-spawn-point) - set
+<!-- - [SetWorldSpawnPoint](https://modrinth.com/mod/set-world-spawn-point) - set
   exact world spawn point
   - Deps:
-    - [Collective](https://modrinth.com/mod/collective)
+    - [Collective](https://modrinth.com/mod/collective) -->
 
 > Additional Quilt server-side mods can be found [here](https://serverside.infra.link).
 
