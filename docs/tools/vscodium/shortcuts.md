@@ -1,0 +1,31 @@
+# Shortcuts
+
+`CMD + K + S` - Edit Keyboard Shortcuts
+
+## General Actions
+
+- ``CTRL + ` `` - Toggle Terminal
+- `SHIFT + CMD + P` - Open Command Palette
+- `CMD + /` - Toggle Comment Block
+- `SHIFT + OPT + F` - Format Document
+- `F2` - Rename Selected Symbol
+
+## Line Actions
+
+- `SHIFT + OPT + ↑` - Duplicate Line Above
+- `SHIFT + OPT + ↓` - Duplicate Line Below
+- `OPT + ↑` - Move Line Up
+- `OPT + ↓` - Move Line Down
+- `SHIFT + CMD + K` - Delete Line
+
+## Cursor Actions
+
+- `ALT + CLICK` - Multiple Cursors
+- `OPT + CMD + ↑` - Create New Cursor Above
+- `OPT + CMD + ↓` - Create New Cursor Below
+- `OPT + CMD + L` - Create New Cursor at all instances of Selection
+
+## Folding Actions
+
+- `OPT + CMD + [` - Fold Current Section
+- `OPT + CMD + ]` - Unfold Current Section

@@ -2,64 +2,38 @@
 
 ## General
 
-<!-- TODO: update this list to reflect extensions available for vscodium -->
-
-- [Back & Forth](https://marketplace.visualstudio.com/items?itemName=nick-rudenko.back-n-forth)
-- [Bracket Peek](https://marketplace.visualstudio.com/items?itemName=jomeinaster.bracket-peek)
-- [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
-- [Cucumber](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
-- [Discord Presence](https://marketplace.visualstudio.com/items?itemName=icrawl.discord-vscode)
-- Project Manager
-- Reload
-- Remote - Containers
-- Remote - SSH
-- Remote SSH: Editing Configuration Files
-- REST Client
-- TabOut
-- Todo Tree
-- Trailing Spaces
-- Visual Studio IntelliCode
-- vscode-json
-- YAML
+- [Discord Rich Presence](https://open-vsx.org/extension/LeonardSSH/vscord)
+- [Error Lens](https://open-vsx.org/extension/usernamehw/errorlens)
+- [Output Colorizer](https://open-vsx.org/extension/IBM/output-colorizer)
+- [Todo Tree](https://open-vsx.org/extension/Gruntfuggly/todo-tree)
+- [Trailing Spaces](https://open-vsx.org/extension/shardulm94/trailing-spaces)
 
 ## Themes
 
 - GitHub Theme
-- Helium Icon Theme
+- Obsidian Dark
 
 ## Python
 
-- [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)
 - Pylance
 - Python
 - Python Docstring Generator
 - Python Indent
 - Pythin UltiSnippets
 
-## Flutter
+## Rust
 
-- [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
-- Flutter
+- rust-analyzer
 
-## Docker
+## Vue/JS/CSS
 
-- Docker
-- Kubernetes
-
-## NodeJs
-
+- [Vue Language Features (Volar)](https://open-vsx.org/extension/Vue/volar)
 - ESLint
-- Vetur
+- Tailwind CSS IntelliSense
+- PostCSS Language Support
 
 ## Markdown
 
 - Markdown All in One
-- Markdown Emoji
 - Markdown Preview Github
 - markdownlint
-
-## CI/CD
-
-- Heroku
-- Netlify
-- Travis CI Status
