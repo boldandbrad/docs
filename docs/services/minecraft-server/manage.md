@@ -22,6 +22,12 @@ Commands for managing the minecraft server.
     systemctl stop minecraft
     ```
 
+    OR in game:
+
+    ```txt
+    /stop
+    ```
+
 - Restart
 
     ```bash
@@ -42,4 +48,10 @@ Commands for managing the minecraft server.
 
 - Update Server:
 
-    > Coming soon.
+    From the directory that contains `./server`:
+
+    ```bash
+    java -jar quilt-installer-latest.jar install server NEW_MINECRAFT_VERSION --download-server
+    ```
+
+- [Update Mods](services/minecraft-server/mods.md)
