@@ -26,14 +26,17 @@ on this page are compatible with both Fabric and Quilt mod loaders.
   and teleport to your home
 - [QuickSpawns](https://www.curseforge.com/minecraft/mc-mods/quickspawns) -
   teleport to world spawn
+- [More Mob Variants](https://modrinth.com/mod/more-mob-variants) - adds more
+  mob texture variants
+- [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) - harvest
+  crops with right click
+  - Deps:
+    - [JamLib](https://modrinth.com/mod/jamlib)
 - [EditSign](https://modrinth.com/mod/editsign) - edit signs without replacing
+  (not needed in 1.20+)
   - Deps:
     - [Cloth Config](https://modrinth.com/mod/cloth-config) (optional)
     - [Mod Menu](https://modrinth.com/mod/modmenu/versions) (client optional)
-<!-- - [SetWorldSpawnPoint](https://modrinth.com/mod/set-world-spawn-point) - set
-  exact world spawn point
-  - Deps:
-    - [Collective](https://modrinth.com/mod/collective) -->
 
 > Additional Quilt server-side mods can be found [here](https://serverside.infra.link).
 

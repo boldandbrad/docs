@@ -33,3 +33,7 @@
   - [git](tools/git/_home.md 'git')
   - [GitHub](tools/github/_home.md 'GitHub')
   - [VSCodium](tools/vscodium/_home.md 'VSCodium')
+
+- Games
+
+  - [Minecraft Java Edition](games/minecraft/_home.md 'Minecraft')
