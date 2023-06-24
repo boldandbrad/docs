@@ -1,3 +1,0 @@
-# GitHub Desktop
-
-> Coming soon.

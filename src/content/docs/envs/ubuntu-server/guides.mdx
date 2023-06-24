@@ -1,0 +1,133 @@
+---
+title: Ubuntu Server - Guides
+description: Useful Ubuntu Server guides.
+---
+
+Useful Ubuntu Server guides.
+
+---
+
+## Firewall
+
+Enable and manage the system firewall on Ubuntu server with `ufw`.
+
+### Enable Firewall
+
+1. Ensure `ufw` is installed:
+
+   ```bash
+   sudo apt install ufw
+   ```
+
+1. Set firewall defaults:
+
+   ```bash
+   sudo ufw default deny incoming
+   sudo ufw default allow outgoing
+   ```
+
+1. Enable firewall:
+
+   ```bash
+   sudo ufw enable
+   ```
+
+### Allow Connection
+
+```bash
+sudo ufw allow {port}
+```
+
+### Check Status
+
+```bash
+sudo ufw status verbose
+```
+
+---
+
+## Enable SSH
+
+Enable remote SSH on Ubuntu Server.
+
+1. Ensure SSH service is installed:
+
+   ```bash
+   sudo apt install openssh-server
+   ```
+
+1. Enable SSH system service:
+
+   ```bash
+   sudo systemctl enable --now ssh.service
+   ```
+
+1. Allow SSH through firewall:
+
+   ```bash
+   sudo ufw allow ssh
+   ```
+
+---
+
+## Enable SFTP
+
+Enable secure FTP on Ubuntu Server.
+
+> Coming soon.
+
+---
+
+## Set Static IP
+
+Setup a static IP address in Ubuntu Server 17+ using the `netplan utility to perform network configurations.
+
+:::tip
+It is recommended that you also reserve a static IP address for the machine in your router settings.
+:::
+
+1. Verify which network interface to configure:
+
+   ```bash
+   ip link
+   ```
+
+1. Edit `netplan` configuration:
+
+   ```bash
+   vi /etc/netplan/{config-file}.yaml
+   ```
+
+1. Change configuration to match the following:
+
+   ```yaml
+   network:
+     version: 2
+     renderer: networkd
+     ethernets:
+       {network-interface}:
+         dhcp4: no
+         addresses:
+            - {desired-static-ip}/24
+         routes:
+           - to: default
+             via: {gateway-ip}
+         nameservers:
+           addresses: [8.8.8.8, 1.1.1.1]
+   ```
+
+   > Older ubuntu/netplan versions may use the deprecated `gateway4` keyword
+   > and syntax in place of `routes`.
+
+1. Apply changes:
+
+   ```bash
+   sudo netplan apply
+   ```
+
+1. Verify changes:
+
+   ```bash
+   ip addr show {network-interface}
+   ip route show
+   ```

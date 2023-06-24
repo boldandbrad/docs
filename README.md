@@ -15,27 +15,25 @@ issues or submit PRs **only** if you have something cool to share with me,
 knowing that I may choose to reject them. Otherwise, please fork and make
 adjustments for your own purposes.
 
-## Run Locally
+## Commands
 
-1. Install [docsify-cli](https://cli.docsifyjs.org/#/)
+All commands are run from the root of the project, from a terminal:
 
-    ```zsh
-    pnpm install -g docsify-cli
-    ```
+> For your convenience:
+>
+> - A [`justfile`](.justfile) is provided for easy command usage with
+>   [just](https://github.com/casey/just).
+> - An `.envrc` is provided to automatically source `./node_modules/.bin/` via
+>   `direnv`. This makes the `astro` command directly available.
 
-2. Serve docs on `localhost:3001`
-
-    With [just](https://github.com/casey/just):
-
-    ```zsh
-    just serve
-    ```
-
-    Or
-
-    ```zsh
-    docsify serve -p 3001 docs
-    ```
+| Command                    | Action                                            |
+| :------------------------- | :------------------------------------------------ |
+| `pnpm install`             | Installs dependencies                             |
+| `pnpm run dev`             | Starts local dev server at `localhost:3000/docs/` |
+| `pnpm run build`           | Build your production site to `./dist/`           |
+| `pnpm run preview`         | Preview your build locally, before deploying      |
+| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check`  |
+| `pnpm run astro -- --help` | Get help using the Astro CLI                      |
 
 ## License
 
