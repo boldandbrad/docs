@@ -2,7 +2,9 @@
 
 Setup a local python dev env.
 
-1. Navigate to the repo directory, then set and verify local python version
+## Setup Virtual Environment
+
+1. Navigate to the repo directory, then set and verify desired local python version
 
     ```zsh
     pyenv local <VERSION>
@@ -52,18 +54,28 @@ Setup a local python dev env.
     pip install --upgrade pip
     ```
 
-5. Install pip-tools
+## Create Project Structure
 
-    ```zsh
-    pip install pip-tools
-    ```
+1. Create `pyproject.toml`
 
-6. Create a `setup.py`
+    > Coming soon.
 
-    [setup.py gist](https://gist.github.com/boldandbrad/538236e794f544f8fe9df0e8bde4c3f2)
+2. Create src directories
 
-7. Run pip-compile:
-
-    ```zsh
-    pip-compile
+    ```txt
+    .venv/
+    docs/ (optional)
+    src/
+      pkg-name/
+    tests/
+    .envrc
+    .flake8 (doesn't yet support pyproject.toml)
+    .gitignore
+    .pre-commit-config.yaml
+    .python-version (created by pyenv)
+    pyproject.toml
+    justfile (optional)
+    LICENSE
+    README.md
+    codecov.yml
     ```
