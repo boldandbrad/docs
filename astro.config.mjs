@@ -8,6 +8,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'boldandbrad docs',
+      customCss: [
+        '/src/styles/custom.css',
+      ],
       social: {
         github: 'https://github.com/boldandbrad/docs',
       },
@@ -21,7 +24,7 @@ export default defineConfig({
           items: [
             { label: 'Patterns', link: '/paradigm/patterns' },
             { label: 'Stack', link: '/paradigm/stack' },
-          ]
+          ],
         },
         {
           label: 'Environments',
@@ -34,7 +37,7 @@ export default defineConfig({
             },
             {
               label: 'Raspberry Pi OS',
-              items: [ { label: 'Setup', link: '/envs/pi/setup' } ]
+              items: [ { label: 'Setup', link: '/envs/pi/setup' } ],
             },
             {
               label: 'Ubuntu Server',
@@ -42,6 +45,38 @@ export default defineConfig({
                 { label: 'Setup', link: '/envs/ubuntu-server/setup' },
                 { label: 'Commands', link: '/envs/ubuntu-server/commands' },
                 { label: 'Guides', link: '/envs/ubuntu-server/guides' },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Games',
+          items: [
+            {
+              label: 'Minecraft',
+              items: [
+                { label: 'Client', link: '/games/minecraft/client' },
+                { label: 'Server', link: '/games/minecraft/server' },
+              ]
+            },
+          ],
+        },
+        {
+          label: 'Programming Languages',
+          items: [
+            {
+              label: 'Python',
+              items: [
+                { label: 'Install', link: '/langs/python/install' },
+                { label: 'Repo Setup', link: '/langs/python/repo-setup' },
+              ],
+            },
+            {
+              label: 'Rust',
+              items: [
+                { label: 'Install', link: '/langs/rust/install' },
+                { label: 'Repo Setup', link: '/langs/rust/repo-setup' },
+                { label: 'Conventions', link: '/langs/rust/conventions' },
               ],
             },
           ],

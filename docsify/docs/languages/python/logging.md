@@ -1,3 +1,0 @@
-# Python Logging
-
-> Coming soon.

@@ -1,0 +1,24 @@
+:root {
+  --sl-hue-accent: 400;
+}
+
+:root,
+::backdrop {
+  --sl-title-min-width: 18rem;
+}
+
+.astro-code {
+  border-radius: 0.5rem;
+}
+
+code {
+  border-radius: 0.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+.starlight-aside {
+  border-radius: 0.5rem;
+}

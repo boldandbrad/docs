@@ -1,0 +1,60 @@
+---
+title: Rust - Install
+description: Install rust.
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+Rust is a multi purpose _ahead-of-time compiled_, statically typed, expression
+based language. This guide covers how to install [`rustup`](https://rustup.rs) to install
+and manage rust.
+
+## Install Rustup
+
+<Tabs>
+  <TabItem label="macOS">
+
+    1. Install rustup installer with [homebrew](https://brew.sh)
+
+        ```zsh
+        brew install rustup-init
+        ```
+
+    2. Initialize rustup
+
+        ```zsh
+        rustup-init
+        ```
+
+    3. Ensure `~/.zshrc` contains `. "$HOME/.cargo/env"`
+
+    4. Restart shell for changes to take effect
+
+  </TabItem>
+  {/* <TabItem label='Linux'>
+
+    > Coming soon.
+
+  </TabItem> */}
+  {/* <TabItem label='Windows'>
+
+    > Coming soon.
+
+  </TabItem> */}
+</Tabs>
+
+---
+
+## Tooling
+
+- [`rustup`](https://rust-lang.github.io/rustup/) - Install Rust and rust tooling
+- [`rustc`](https://doc.rust-lang.org/book/ch01-01-installation.html) - Rust
+  language compiler
+- [`rustfmt`](https://rust-lang.github.io/rustfmt/?version=v1.5.1&search=) -
+  Rust formatter and linter
+- [`cargo`](https://doc.rust-lang.org/stable/cargo/) - Rust build and packaging system
+
+## Resources
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rustup Book](https://rust-lang.github.io/rustup/index.html)
