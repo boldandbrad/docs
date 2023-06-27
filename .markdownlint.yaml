@@ -1,5 +1,4 @@
-
-MD013:       # allow long line length in code blocks and tables
+MD013: # allow long line length in code blocks and tables
   code_blocks: false
   tables: false
 MD026: false # allow trailing punctuation

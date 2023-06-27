@@ -18,15 +18,12 @@ Configure tailwind template paths:
 ```js
 // tailwind.config.js
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 Add tailwind directives to css:
@@ -42,9 +39,9 @@ Make sure css is imported:
 
 ```ts
 // src/main.(js/ts)
-import { createApp } from 'vue'
-import App from './App.vue'
-import './index.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./index.css";
 ```
 
 Install headless ui and heroicons:
@@ -56,7 +53,7 @@ pnpm install @headlessui/vue @heroicons/vue
 Install Inter font (optional):
 
 ```html
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 ```
 
 ```ts

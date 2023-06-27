@@ -2,7 +2,7 @@
 
 [![Docs](https://img.shields.io/website?down_message=down&label=status&up_message=online&url=https%3A%2F%2Fboldandbrad.github.io%2Fdocs%2F)](https://boldandbrad.github.io/docs/)
 
-> *Opinionated* personal technical guides and docs.
+> _Opinionated_ personal technical guides and docs.
 
 My name is **boldandbrad** and <u>this</u> is my personal technical documentation
 site. I have made it open source to serve as an example for others. I do not claim
@@ -18,7 +18,7 @@ be compatible with the following principles:
 - Embrace **open source**.
 
 With that said, I regularly update the site as I discover better tools and
-techniques. Since I *am* always trying to learn, please feel free to [create
+techniques. Since I _am_ always trying to learn, please feel free to [create
 issues](https://github.com/boldandbrad/docs/issues) or submit PRs if you have
 something cool to share with me. However, please understand that I may choose
 to reject them. If so, please fork and make adjustments for your own purposes
