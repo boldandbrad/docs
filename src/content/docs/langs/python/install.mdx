@@ -1,0 +1,161 @@
+---
+title: Python - Install
+description: Install python.
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+Python is a multi-purpose, human readable, dynamically typed programming language.
+This guide covers how to install and manage multiple python versions with [`pyenv`](https://github.com/pyenv/pyenv).
+
+## Install pyenv
+
+<Tabs>
+  <TabItem label="macOS">
+
+    1. Install pyenv with [homebrew](https://brew.sh)
+
+        ```zsh
+        brew install pyenv
+        ```
+
+    2. Add to `~/.zshrc`
+
+        ```zsh
+        echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+        ```
+
+    3. Restart shell or run `pyenv init -` for changes to take effect
+
+  </TabItem>
+  {/* <TabItem label='Linux'>
+
+    > Coming soon.
+
+  </TabItem> */}
+  <TabItem label='Windows'>
+
+    1. Install pyenv with [chocolatey](https://chocolatey.org)
+
+        ```cmd
+        choco install pyenv-win
+        ```
+
+    2. Add pyenv user and system environment variable
+
+        `PYENV` = `%USERPROFILE%\.pyenv\pyenv-win`
+
+    3. Add the following to the system environment PATH
+
+        - `%PYENV%\bin`
+        - `%PYENV%\shims`
+        > Make sure they appear both _above_ `%USERPROFILE%\AppData\Local\Microsoft\WindowsApps`
+
+    4. From user home directory run
+
+        ```cmd
+        pyenv rehash
+        ```
+
+  </TabItem>
+</Tabs>
+
+## Install python
+
+1.  Check what versions of python are available
+
+        <Tabs>
+          <TabItem label='macOS'>
+
+            ```zsh
+            pyenv install -l | grep '^\s*[.0-9]*$'
+            ```
+
+          </TabItem>
+          <TabItem label='Windows'>
+
+            ```cmd
+            pyenv install -l | findstr "^\s*[.0-9]*$"
+            ```
+
+          </TabItem>
+        </Tabs>
+
+1.  Install a python version
+
+    ```zsh
+    pyenv install <VERSION>
+    ```
+
+    {/* <!-- TODO: add note for manually installing old versions into correct dir on windows --> */}
+
+1.  Set and verify global python version
+
+    ```zsh
+    pyenv global <VERSION>
+    ```
+
+    ```zsh
+    pyenv versions
+    ```
+
+    ```zsh
+    python --version
+    ```
+
+    > Note: `pip` and `venv` come pre-packaged with python 3.4+
+
+---
+
+## Tooling
+
+Recommended python tooling.
+
+### Environment
+
+- [`pyenv`](https://github.com/pyenv/pyenv) - manage multiple global python
+  installs.
+- [`venv`](https://github.com/python/cpython/tree/master/Lib/venv) - create
+  project specific virtual environments.
+  - Included with python
+- [`direnv`](https://direnv.net) (optional) - automatically activate virtual
+  environment on change directory.
+- [`pip`](https://github.com/pypa/pip) - install python packages/dependencies to
+  the active environment.
+  - Included with python2 >= 2.7.9 and python3 >= 3.4
+
+### Lint and Format
+
+- [`pre-commit`](https://pre-commit.com) - automatically run code linters and
+  formatters.
+- [`black`](https://black.readthedocs.io) - python code formatter.
+- [`flake8`](https://flake8.pycqa.org) - python code formatter and
+  checker.
+- [`isort`](https://pycqa.github.io/isort) - python import sorter.
+- [`ruff`](https://ruff.rs) - python code linter.
+- [`semgrep`](https://semgrep.dev/docs/category/semgrep-cli) - code bug and
+  security issue detector.
+- [refurb](https://github.com/dosisod/refurb) - python code modernizer.
+
+### Test
+
+- [`pytest`](https://pytest.org) - write and run unit tests.
+- [`pytest-cov`](https://pytest-cov.readthedocs.io) - pytest code coverage
+  plugin.
+- [`pytest-mock`](https://pytest-mock.readthedocs.io) - pytest mocker plugin.
+
+### Build and Distribute
+
+- [`flit`](https://flit.pypa.io) - build packages.
+- [`GitHub Actions`](https://github.com/actions) - automatically test and
+  publish packages.
+- [`homebrew-pypi-poet`](https://github.com/tdsmith/homebrew-pypi-poet) -
+  generate [`homebrew`](https://brew.sh) formulae for easier distribution on
+  macOS and Linux.
+
+### Editor
+
+- [`VScode`](https://code.visualstudio.com)/[`VScodium`](https://vscodium.com) -
+  code editor.
+
+{/* TODO: add relevant python vscode extensions */}

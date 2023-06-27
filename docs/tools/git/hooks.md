@@ -1,3 +1,0 @@
-# Git Hooks
-
-> Coming soon.

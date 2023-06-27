@@ -1,0 +1,103 @@
+---
+title: Python - Repo Setup
+description: Setup a python project repo.
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+Setup a local python development environment.
+
+## Prerequisites
+
+- [Python Install](/docs/langs/python/install)
+
+## Virtual Environment
+
+1.  Navigate to the repo directory, then set and verify desired local python version
+
+    ```zsh
+    pyenv local <VERSION>
+    ```
+
+    ```zsh
+    python --version
+    ```
+
+2.  Create virtual environment from the local python version
+
+    ```zsh
+    python -m venv .venv
+    ```
+
+    > Optional: `--system-site-packages` to include packages from parent python install
+
+3.  Activate and verify venv
+
+         <Tabs>
+           <TabItem label='macOS/Linux'>
+
+             ```zsh
+             source .venv/bin/activate
+             # or
+             . .venv/bin/activate
+             ```
+
+             ```zsh
+             which python
+             ```
+
+           </TabItem>
+           <TabItem label='Windows'>
+
+             ```cmd
+             .venv\Scripts\activate.bat
+             ```
+
+             ```cmd
+             where python
+             ```
+
+           </TabItem>
+         </Tabs>
+
+    {/* TODO: add link to vscode python env settings.json */}
+
+4.  Update local pip
+
+    ```zsh
+    pip install --upgrade pip
+    ```
+
+## Project Structure
+
+1. Create `pyproject.toml`
+
+   > Coming soon.
+
+2. Create src directories
+
+   ```txt
+    .
+    ├── .github/
+    ├── .venv/
+    ├── docs/
+    │   ├── .../
+    │   └── changelog.md
+    ├── src/
+    │   ├── pkg-name/
+    │   │   ├── .../
+    │   │   ├── __init__.py
+    │   │   └── pkg-name.py
+    │   └── env.d.ts
+    ├── tests/
+    ├── .envrc
+    ├── .flake8 (doesn't yet support pyproject.toml)
+    ├── .gitignore
+    ├── .pre-commit-config.yaml
+    ├── .python-version (created by pyenv)
+    ├── codecov.yml
+    ├── justfile (optional)
+    ├── pyproject.toml
+    ├── LICENSE
+    └── README.md
+   ```

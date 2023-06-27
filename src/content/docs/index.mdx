@@ -1,0 +1,33 @@
+---
+title: boldandbrad docs
+description: Opinionated personal technical guides and docs.
+template: splash
+hero:
+  tagline: Opinionated personal technical guides and docs.
+  image:
+    file: ../../assets/boldandbrad-500.png
+  actions:
+    - text: Start Reading
+      link: /docs/meta/
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Principles
+
+<CardGrid>
+  <Card title="Consistency" icon="bars"></Card>
+  <Card title="Inclusivity" icon="puzzle">
+    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  </Card>
+  <Card title="Simplicity" icon="approve-check">
+    Edit your `sidebar` and other config in `astro.config.mjs`.
+  </Card>
+  <Card title="Open Source(ry)" icon="open-book">
+    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  </Card>
+</CardGrid>
+
+Powered by [Starlight](https://starlight.astro.build/).

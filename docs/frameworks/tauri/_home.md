@@ -1,3 +1,0 @@
-# Tauri
-
-> Coming soon.
