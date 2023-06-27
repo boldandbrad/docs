@@ -4,16 +4,25 @@
 
 > *Opinionated* personal technical guides and docs.
 
-This repo hosts my personal technical documentation. I have made it open source
-to serve as an example for others. I do not claim to be an expert on any of the
-covered topics, nor do I always follow industry best practices.
-**Use this knowledge base at your own risk**.
+My name is **boldandbrad** and <u>this</u> is my personal technical documentation
+site. I have made it open source to serve as an example for others. I do not claim
+to be an expert on any of the covered topics, nor do I always follow industry
+best practices. **Use this knowledge base at your own risk**.
 
-With that said, I regularly update this repo as I discover better tools and
-techniques. Since I *am* constantly trying to learn, feel free to create
-issues or submit PRs **only** if you have something cool to share with me,
-knowing that I may choose to reject them. Otherwise, please fork and make
-adjustments for your own purposes.
+My goal is that at the very least you'll find the knowledge contained here to
+be compatible with the following principles:
+
+- Be **consistent**.
+- Be **inclusive**.
+- Be **simple**.
+- Embrace **open source**.
+
+With that said, I regularly update the site as I discover better tools and
+techniques. Since I *am* always trying to learn, please feel free to [create
+issues](https://github.com/boldandbrad/docs/issues) or submit PRs if you have
+something cool to share with me. However, please understand that I may choose
+to reject them. If so, please fork and make adjustments for your own purposes
+if you wish.
 
 ## Commands
 
