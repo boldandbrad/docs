@@ -28,12 +28,12 @@ if you wish.
 
 All commands are run from the root of the project, from a terminal:
 
-> For your convenience:
+> If you prefer:
 >
-> - A [`justfile`](.justfile) is provided for easy command usage with
+> - [`justfile`](justfile) is provided for easy command usage with
 >   [just](https://github.com/casey/just).
-> - An `.envrc` is provided to automatically source `./node_modules/.bin/` via
->   `direnv`. This makes the `astro` command directly available.
+> - [`.envrc`](.envrc) is provided to automatically source `./node_modules/.bin/`
+>   via [direnv](https://direnv.net/). This makes the `astro` command directly available.
 
 | Command                    | Action                                            |
 | :------------------------- | :------------------------------------------------ |
