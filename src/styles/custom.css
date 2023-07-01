@@ -1,12 +1,15 @@
+/* theme adjustments */
 :root {
   --sl-hue-accent: 400;
 }
 
+/* static search bar placement */
 :root,
 ::backdrop {
   --sl-title-min-width: 18rem;
 }
 
+/* border radius adjustments */
 .astro-code {
   border-radius: 0.5rem;
 }
@@ -21,4 +24,12 @@ code {
 
 .starlight-aside {
   border-radius: 0.5rem;
+}
+
+/* centered footer text */
+.footer-text {
+  margin: auto;
+  margin-top: 3rem;
+  width: 50%;
+  text-align: center;
 }

@@ -1,19 +1,23 @@
-# Git Usage
+---
+title: Git - Usage
+description: Common git commands.
+---
 
-Topics to cover:
+## Branches
 
-- concepts/practices
-- gitignores
-- new feature
-- git flow
-- rebasing
-- merging
-- conflicts
-- prs/code reviews
-- creating and applying patches
-- stashing/unstashing
+Create a new branch from the main branch for each independent feature or fix.
 
-## Amend Commit Message
+### Naming
+
+- Main - `main`
+- Feature - `feat/<issue>/<desc>` / `f/<issue>/<desc>`
+- Bugfix - `bug/<issue>/<desc>` / `b/<issue>/<desc>`
+
+## Commits
+
+Commit early and often. Squash commits.
+
+### Amend Commit Message
 
 Amend last commit message:
 
@@ -27,7 +31,9 @@ Safely force push new commit message to remote:
 git push --force-with-lease origin HEAD
 ```
 
-## Rename Tag
+## Tags
+
+### Rename Tag
 
 > Note: This can have consequences when collaborating on a repo. Use caution.
 
@@ -47,3 +53,19 @@ Delete the old tag from both the remote and local:
 git push origin :refs/tags/old_tag
 git tag -d old_tag
 ```
+
+## Patches
+
+> Coming soon.
+
+## Stashing
+
+> Coming soon.
+
+## Rebasing & Merging
+
+> Coming soon.
+
+## Conflict Resolution
+
+> Coming soon.

@@ -29,14 +29,20 @@ export default defineConfig({
           items: [
             {
               label: "macOS",
-              items: [{ label: "Setup", link: "/envs/macos/setup" }],
+              collapsed: true,
+              items: [
+                { label: "Setup", link: "/envs/macos/setup" },
+                // { label: "Shortcuts", link: "/envs/macos/shortcuts" },
+              ],
             },
             {
               label: "Raspberry Pi OS",
+              collapsed: true,
               items: [{ label: "Setup", link: "/envs/pi/setup" }],
             },
             {
               label: "Ubuntu Server",
+              collapsed: true,
               items: [
                 { label: "Setup", link: "/envs/ubuntu-server/setup" },
                 { label: "Commands", link: "/envs/ubuntu-server/commands" },
@@ -50,6 +56,7 @@ export default defineConfig({
           items: [
             {
               label: "Minecraft",
+              collapsed: true,
               items: [
                 { label: "Client", link: "/games/minecraft/client" },
                 { label: "Server", link: "/games/minecraft/server" },
@@ -62,6 +69,7 @@ export default defineConfig({
           items: [
             {
               label: "Python",
+              collapsed: true,
               items: [
                 { label: "Install", link: "/langs/python/install" },
                 { label: "Repo Setup", link: "/langs/python/repo-setup" },
@@ -69,10 +77,25 @@ export default defineConfig({
             },
             {
               label: "Rust",
+              collapsed: true,
               items: [
                 { label: "Install", link: "/langs/rust/install" },
                 { label: "Repo Setup", link: "/langs/rust/repo-setup" },
                 { label: "Conventions", link: "/langs/rust/conventions" },
+              ],
+            },
+          ],
+        },
+        {
+          label: "Tools",
+          items: [
+            {
+              label: "Git",
+              collapsed: true,
+              items: [
+                { label: "Setup", link: "/tools/git/setup" },
+                { label: "Repo Init", link: "/tools/git/repo-init" },
+                { label: "Usage", link: "/tools/git/usage" },
               ],
             },
           ],
