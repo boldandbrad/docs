@@ -1,20 +1,20 @@
 
 # install dependencies
 install:
-    pnpm install
+    bun install
 
-# update starlight
+# update dependencies
 update:
-    pnpm upgrade @astrojs/starlight --latest
+    bun update --save
 
 # run dev server
 dev:
-    pnpm run dev
+    bun run dev
 
 # build production site to ./dist/
 build:
-    pnpm run build
+    bun run build
 
 # preview build locally
 preview:
-    pnpm run preview
+    bun run preview

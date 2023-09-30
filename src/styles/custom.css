@@ -1,6 +1,32 @@
-/* theme adjustments */
+/* dark mode colors */
 :root {
-  --sl-hue-accent: 400;
+  --sl-color-accent-low: #072d00;
+  --sl-color-accent: #247f00;
+  --sl-color-accent-high: #aad7a0;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #eceef2;
+  --sl-color-gray-2: #c0c2c7;
+  --sl-color-gray-3: #888b96;
+  --sl-color-gray-4: #545861;
+  --sl-color-gray-5: #353841;
+  --sl-color-gray-6: #24272f;
+  --sl-color-black: #17181c;
+}
+
+/* light mode colors */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #c0e2b8;
+  --sl-color-accent: #258100;
+  --sl-color-accent-high: #0d3e00;
+  --sl-color-white: #17181c;
+  --sl-color-gray-1: #24272f;
+  --sl-color-gray-2: #353841;
+  --sl-color-gray-3: #545861;
+  --sl-color-gray-4: #888b96;
+  --sl-color-gray-5: #c0c2c7;
+  --sl-color-gray-6: #eceef2;
+  --sl-color-gray-7: #f5f6f8;
+  --sl-color-black: #ffffff;
 }
 
 /* static search bar placement */
