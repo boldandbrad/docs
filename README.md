@@ -24,4 +24,4 @@ techniques. Since I _am_ always trying to learn, please feel free to
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE.md)
