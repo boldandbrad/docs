@@ -15,10 +15,10 @@ Just a list of things I care about for now...
 
 Reduce developer friction by not relying on globally installed dev tooling.
 
-#### Nodejs
+#### Javascript/Typescript
 
-Install development tool binaries locally with `pnpm install -D TOOL` (ie: `@vue/cli`, `just-install`, etc) and then
-provide a script or `.envrc` file to source `./node_modules/.bin/`.
+Install development tool binaries locally with `bun install -d TOOL` (ie: `@vue/cli`, `just-install`, `astro`, etc) and
+then provide a script or `.envrc` file to source `./node_modules/.bin/`.
 
 This ensures that all developers can just `pnpm install` and `source .envrc` to
 to have the same tooling and versions available. Developers can still have

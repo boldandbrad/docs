@@ -1,13 +1,14 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://boldandbrad.github.io",
-  base: "/docs",
+  base: "docs",
   integrations: [
     starlight({
       title: "boldandbrad docs",
+      // logo: { src: "/src/assets/boldandbrad-500.png" },
       customCss: ["/src/styles/custom.css"],
       social: {
         github: "https://github.com/boldandbrad/docs",
@@ -104,6 +105,5 @@ export default defineConfig({
     }),
   ],
 
-  // Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
-  image: { service: { entrypoint: "astro/assets/services/sharp" } },
+  image: { service: passthroughImageService() },
 });

@@ -1,17 +1,14 @@
-name: Deploy to GitHub Pages
+name: Build Docs
 
 on:
-  # Trigger this workflow every time the `main` branch is pushed.
+  # Trigger this workflow every time a branch is pushed.
   push:
-    branches: [main]
   # Enable running this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
+# Allow this job to clone the repo
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
@@ -23,14 +20,3 @@ jobs:
         uses: withastro/action@v1
         with:
           package-manager: bun # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
