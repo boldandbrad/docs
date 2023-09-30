@@ -1,12 +1,12 @@
 name: Build Docs
 
 on:
-  # Trigger this workflow every time a branch is pushed.
+  # trigger this workflow every time a branch is pushed
   push:
-  # Enable running this workflow manually from the Actions tab on GitHub.
+  # enable running this workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
-# Allow this job to clone the repo
+# allow this job to clone the repo
 permissions:
   contents: read
 
@@ -16,11 +16,5 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-      # - name: Install Bun
-      #   uses: oven-sh/setup-bun@v1
-      #   with:
-      #     bun-version: latest
       - name: Install, build, and upload your site
         uses: withastro/action@v1
-        # with:
-        #   package-manager: bun # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
