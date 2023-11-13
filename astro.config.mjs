@@ -83,6 +83,7 @@ export default defineConfig({
                 { label: "Install", link: "/langs/rust/install" },
                 { label: "Repo Setup", link: "/langs/rust/repo-setup" },
                 { label: "Conventions", link: "/langs/rust/conventions" },
+                { label: "Resources", link: "/langs/rust/resources" },
               ],
             },
           ],
