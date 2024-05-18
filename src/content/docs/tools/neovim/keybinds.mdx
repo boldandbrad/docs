@@ -1,0 +1,75 @@
+# Neovim Cheatsheet
+
+## From Normal Mode
+
+### Navigation
+
+- `h` - move to prev character
+- `w` - move to next word
+- `b` - move to prev word
+- `e` - move to next word end
+- `ge` - move to prev word end
+- `0` - move to start of line
+- `$` - move to end of line
+- `A` - move to end of line and start insert mode
+- `G` - move to end of file
+- `#G` - move to the given line
+- `gg` - move to start of file
+- `%` - move to matching brace
+
+### Selection
+
+- `V` - select current line
+- `viw` - select current word
+- `viW` - select current contiguous characters
+- `vip` - select current paragraph
+- `vi{` - select all between curly braces
+- `vi[` - select all between brackets
+- `va{` - select all between curly braces including the curly braces
+- `va[` - select all between brackets including the brackets
+- `vi"`
+- `va"`
+
+## Actions
+
+- `p` - put below cursor
+- `P` - put after cursor
+- `u` - undo
+- `C-r` - redo
+- `r` - replace current character
+
+### Delete
+
+- `dd` - delete current line
+- `dw` - delete to start of next word
+- `de` - delete rest of current word
+- `diw` - delete current word
+- `x` - delete current character
+
+### Change
+
+- `cc` - change current line
+- `ce` - change to end of current word
+- `c$` - change to end of current line
+
+### Find and Replace
+
+- `/` - find text after
+- `?` - find text before
+- `n` - find next instance
+- `N` - find previous instance
+- `:s/find-text/replace-text` - find and replace next occurance
+- `:s/find-text/replace-text/g` - find and replace all occurances in current line
+- `:#,#s/find-text/replace-text/g` - find and replace all occurances in range of lines
+- `:%s/find-text/replace-text/g` - find and replace all occurances in current file
+- `:%s/find-text/replace-text/gc` - find and replace all occurances in current file with confirmation
+
+- `C-o` - go back
+- `C-i` - go forward
+
+### Auto Completion (nvim-cmp)
+
+- `<C-n>` - next suggestion
+- `<C-p>` - previous suggestion
+- `<C-e>` - decline suggestion
+
