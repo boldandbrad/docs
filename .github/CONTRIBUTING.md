@@ -20,35 +20,27 @@ Pleae feel free to...
 
 ## About this repo
 
-This repo contains a Starlight themed Astro docs site. Site contents can be
-found in `src/content/`.
+This repo contains a [Simple Wiki](https://lume.land/theme/simple-wiki/) themed
+[Lume](https://lume.land) documentation site, powered by
+[Deno](https://deno.land). Site contents can be found in `./src`.
 
 ### Dev setup
 
 #### Prerequisites
 
-Make sure you have these installed before following the setup steps.
-
-- [Bun](https://bun.sh) (v1+) - Required for local development.
-- [Node.js](https://nodejs.org) (v18+) - Required to run production builds _with_
-  _site search enabled_.
-- [just](https://github.com/casey/just) (optional) - Simple command runner.
-- [direnv](https://direnv.net/) (optional) - Automatically source [`.envrc`](.envrc).
+Make sure you have [Deno](https://deno.land) installed before continuing with
+setup.
 
 #### Repo setup
 
 1. Fork this repo to your personal GitHub account.
 2. Clone your fork of this repo to your computer.
 3. Change directory to the cloned repo.
-4. Install dependencies with `bun install`.
-5. Run the dev server with `bun run dev`.
+4. Run the dev server with `deno task serve`.
 
 #### Useful commands
 
 | Command                          | Action                                           |
 | :------------------------------- | :----------------------------------------------- |
-| `bun install`/`just install`     | Install dependencies                             |
-| `bun run dev`/`just dev`         | Start local dev server at `localhost:4321/docs/` |
-| `bun run build`/`just build`     | Build production site to `./dist/` via node      |
-| `bun run preview`/`just preview` | Preview build locally, before deploying          |
-| `just update`                    | Update dependencies                              |
+| `deno task serve`                | Start local dev server at `localhost:3000`       |
+| `deno task build`                | Build production site to `./_site/` via deno     |
