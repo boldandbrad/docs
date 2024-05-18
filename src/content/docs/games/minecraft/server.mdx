@@ -7,15 +7,8 @@ This document walks through installing and running a dedicated Minecraft Java
 Edition Server on an Ubuntu Server host. I prefer Ubuntu Server as host because
 it is lightweight and also not windows.
 
-The modding toolchain and server launcher used in this tutorial is [QuiltMC](https://quiltmc.org/en/).
-Quilt provides an installer that makes setup and maintenance simpler, while
-offering compatibility with Fabric API mods.
-
-:::caution
-QuiltMC is still in beta. Though I have not run into any compatibility or
-stability issues with the [mods](#useful-mods) I use, it may not yet work as
-expected in ALL use cases.
-:::
+The modding toolchain and server launcher used in this tutorial is [Fabric](https://fabricmc.net/).
+Fabric provides an installer that makes setup and maintenance simpler.
 
 ---
 
@@ -35,12 +28,12 @@ This guide assumes you've already completed the following:
 
 ### Create User
 
-1. Create `minecraft` user:
+1. Create a Minecraft admin user:
 
    ```bash
-   sudo adduser --system --home /srv/minecraft-server
-   sudo addgroup --system minecraft
-   sudo adduser minecraft minecraft
+   sudo adduser --system --home /srv/mcadmin
+   sudo addgroup --system mcadmin
+   sudo adduser mcadmin mcadmin
    ```
 
 ### Install Server
@@ -51,24 +44,24 @@ This guide assumes you've already completed the following:
    sudo apt install openjdk-18-jre-headless
    ```
 
-1. Download the latest QuiltMC Installer:
+1. Download the latest [Fabric Installer](https://fabricmc.net/use/installer/):
 
    ```bash
-   wget https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-installer/latest/quilt-installer-latest.jar
+   wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.2/fabric-installer-0.11.2.jar
    ```
 
-1. Use QuiltMC Installer to install a minecraft server jar:
+1. Use Fabric Installer to install a minecraft server jar:
 
    ```bash
-   java -jar quilt-installer-latest.jar install server MINECRAFT_VERSION --download-server
+   java -jar fabric-installer-<VERSION>.jar server -dir new-server -mcverion <MINECRAFT_VERSION> -downloadMinecraft
    ```
 
-   > Note: QuiltMC installs the server into `./server`
+   > Note: Fabric will install the server into `./new-server`
 
-1. Run the installed server launch jar:
+1. From within the `new-server` directory, run the installed server launch jar:
 
    ```bash
-   java -jar quilt-server-launch.jar --nogui
+   java -jar fabric-server-launch.jar nogui
    ```
 
    > Note: The server _will_ fail to start, asking you to accept the EULA.
@@ -76,7 +69,7 @@ This guide assumes you've already completed the following:
 1. Change `eula=false` to `eula=true` in `eula.txt` to accept the EULA:
 
    ```bash
-   vi eula.txt
+   vim eula.txt
    ```
 
 ### Create system service
@@ -85,18 +78,18 @@ This guide assumes you've already completed the following:
 
    ```toml
    [Unit]
-   WorkingDirectory=/srv/minecraft-server/server
-   User=minecraft
-   Group=minecraft
+   WorkingDirectory=/srv/mcadmin/new-server
+   User=mcadmin
+   Group=mcadmin
    Restart=on-failure
    RestartSec=20 5
-   ExecStart=/usr/bin/java -Xms12G -Xmx12G -jar quilt-server-launch.jar --nogui
+   ExecStart=/usr/bin/java -Xms12G -Xmx12G -jar fabric-server-launch.jar nogui
 
    [Install]
    WantedBy=multi-user.target
    ```
 
-   > Note: This guide assumes a dedicated host machine with 16GB of RAM. Adjust
+   > Note: This guide assumes a dedicated host machine with at least 16GB of RAM. Adjust
    > the `-Xms` and `-Xmx` values accordingly based on your system's resources.
 
 1. Reload systemctl daemon:
@@ -218,7 +211,7 @@ Update server to a new Minecraft version.
 - From the directory that contains `./server`:
 
   ```bash
-  java -jar quilt-installer-latest.jar install server NEW_MINECRAFT_VERSION --download-server
+  java -jar fabric-installer-<VERSION>.jar server -dir <SERVER_DIR> -mcversion <NEW_MINECRAFT_VERSION> -downloadMinecraft
   ```
 
 - [Update Mods](#mods)
@@ -228,12 +221,9 @@ Update server to a new Minecraft version.
 ## Mods
 
 Install server-side mods that optimze and improve gameplay. All mods recommended
-on this page are compatible with both Fabric and Quilt mod loaders.
+on this page are compatible with the Fabric mod loader.
 
 ### Useful Mods
-
-- [Quilted Fabric Modpack](https://modrinth.com/mod/qsl) - Fabric mod support
-  for Quilt (not needed if running Fabric mod loader)
 
 #### Optimizations
 
@@ -249,18 +239,14 @@ on this page are compatible with both Fabric and Quilt mod loaders.
     - [Balm](https://modrinth.com/mod/balm)
       - Deps:
         - [Cloth Config](https://modrinth.com/mod/cloth-config)
-- [QuickHomes](https://beta.curseforge.com/minecraft/mc-mods/quickhomes) - set
-  and teleport to your home
-- [QuickSpawns](https://www.curseforge.com/minecraft/mc-mods/quickspawns) -
-  teleport to world spawn
+- [Essential Commands](https://modrinth.com/mod/essential-commands) - adds helpful commands such as `/spawn` and
+  `/home`, among others.
 - [More Mob Variants](https://modrinth.com/mod/more-mob-variants) - adds more
   mob texture variants
 - [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) - harvest
   crops with right click
   - Deps:
     - [JamLib](https://modrinth.com/mod/jamlib)
-
-> Additional Quilt server-side mods can be found [here](https://serverside.infra.link).
 
 ### Install Mods
 
