@@ -75,8 +75,8 @@ A collection of Client-Side Minecraft mods that I use.
     - [Balm](https://modrinth.com/mod/balm)
       - Deps:
         - [Cloth Config](https://modrinth.com/mod/cloth-config)
-- [Essential Commands](https://modrinth.com/mod/essential-commands) - adds helpful commands such as `/spawn` and
-  `/home`, among others.
+- [Essential Commands](https://modrinth.com/mod/essential-commands) - adds
+  helpful commands such as `/spawn` and `/home`, among others.
 - [More Mob Variants](https://modrinth.com/mod/more-mob-variants) - adds more
   mob texture variants
 - [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) - harvest
