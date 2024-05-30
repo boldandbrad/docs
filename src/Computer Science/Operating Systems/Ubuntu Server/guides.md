@@ -1,11 +1,11 @@
 ---
-title: Ubuntu Server - Guides
-description: Useful Ubuntu Server guides.
+title: Guides
+order: 2
 ---
 
-Useful Ubuntu Server guides.
+# Guides
 
----
+Helpful commands and guides for Ubuntu Server.
 
 ## Firewall
 
@@ -44,8 +44,6 @@ sudo ufw allow {port}
 sudo ufw status verbose
 ```
 
----
-
 ## Enable SSH
 
 Enable remote SSH on Ubuntu Server.
@@ -68,23 +66,20 @@ Enable remote SSH on Ubuntu Server.
    sudo ufw allow ssh
    ```
 
----
-
 ## Enable SFTP
 
 Enable secure FTP on Ubuntu Server.
 
 > Coming soon.
 
----
-
 ## Set Static IP
 
-Setup a static IP address in Ubuntu Server 17+ using the `netplan utility to perform network configurations.
+Setup a static IP address in Ubuntu Server 17+ using the `netplan` utility to
+perform network configurations.
 
-:::tip
-It is recommended that you also reserve a static IP address for the machine in your router settings.
-:::
+> [!tip]
+> It is recommended that you also reserve a static IP address for the machine in
+> your router settings.
 
 1. Verify which network interface to configure:
 
@@ -92,13 +87,13 @@ It is recommended that you also reserve a static IP address for the machine in y
    ip link
    ```
 
-1. Edit `netplan` configuration:
+2. Edit `netplan` configuration:
 
    ```bash
    vi /etc/netplan/{config-file}.yaml
    ```
 
-1. Change configuration to match the following:
+3. Change configuration to match the following:
 
    ```yaml
    network:
@@ -119,15 +114,55 @@ It is recommended that you also reserve a static IP address for the machine in y
    > Older ubuntu/netplan versions may use the deprecated `gateway4` keyword
    > and syntax in place of `routes`.
 
-1. Apply changes:
+4. Apply changes:
 
    ```bash
    sudo netplan apply
    ```
 
-1. Verify changes:
+5. Verify changes:
 
    ```bash
    ip addr show {network-interface}
    ip route show
    ```
+
+## Get IP Addresses
+
+Get internal IP Addresses (v4 & v6):
+
+```bash
+hostname -I
+```
+
+Get external IP Address (v4):
+
+```bash
+curl v4.ident.me
+```
+
+Get external IP Address (v6):
+
+```bash
+curl v6.ident.me
+```
+
+Get current network devices and interfaces:
+
+```bash
+ip link
+```
+
+## Reboot and Shutdown
+
+Restart server:
+
+```bash
+sudo reboot now
+```
+
+Shutdown server:
+
+```bash
+sudo shutdown now
+```
