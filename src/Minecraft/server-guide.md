@@ -1,7 +1,9 @@
 ---
-title: Minecraft - Server
-description: Minecraft Server side setup and mods.
+title: Server Guide
+description: Minecraft Java Edition Server setup.
 ---
+
+# Server Guide
 
 This document walks through installing and running a dedicated Minecraft Java
 Edition Server on an Ubuntu Server host. I prefer Ubuntu Server as host because
@@ -9,8 +11,6 @@ it is lightweight and also not windows.
 
 The modding toolchain and server launcher used in this tutorial is [Fabric](https://fabricmc.net/).
 Fabric provides an installer that makes setup and maintenance simpler.
-
----
 
 ## Install
 
@@ -20,11 +20,12 @@ Install Minecraft Java Edition Server on an Ubuntu Server host.
 
 This guide assumes you've already completed the following:
 
-- [Ubuntu Server Setup](/docs/envs/ubuntu-server/setup)
-  - [Enable Firewall](/docs/envs/ubuntu-server/guides/#firewall)
-  - [Enable SSH](/docs/envs/ubuntu-server/guides/#enable-ssh)
-  - [Enable SFTP](/docs/envs/ubuntu-server/guides/#enable-sftp) (Optional)
-  - [Set Static IP](/docs/envs/ubuntu-server/guides/#set-static-ip)
+- [Ubuntu Server Install](/computer-science/operating-systems/ubuntu-server/install)
+  - [Enable Firewall](/computer-science/operating-systems/ubuntu-server/guides/#firewall)
+  - [Enable SSH](/computer-science/operating-systems/ubuntu-server/guides/#enable-ssh)
+  - [Enable SFTP](/computer-science/operating-systems/ubuntu-server/guides/#enable-sftp)
+    (Optional)
+  - [Set Static IP](/computer-science/operating-systems/ubuntu-server/guides/#set-static-ip)
 
 ### Create User
 
@@ -89,8 +90,9 @@ This guide assumes you've already completed the following:
    WantedBy=multi-user.target
    ```
 
-   > Note: This guide assumes a dedicated host machine with at least 16GB of RAM. Adjust
-   > the `-Xms` and `-Xmx` values accordingly based on your system's resources.
+   > Note: This guide assumes a dedicated host machine with at least 16GB of
+   > RAM. Adjust the `-Xms` and `-Xmx` values accordingly based on your system's
+   >resources.
 
 1. Reload systemctl daemon:
 
@@ -117,8 +119,6 @@ service must be forwarded to a port externally. This is typically handled in you
 router settings, which differ greatly depending on brand and model.
 
 > Generalized instructions for this section are coming soon.
-
----
 
 ## Configure
 
@@ -154,8 +154,6 @@ Config:
 Server Operators can manage the allowlist in game using the `/whitelist` sub
 commands.
 
----
-
 ## Manage
 
 Manage and maintain Minecraft server.
@@ -184,7 +182,7 @@ Commands for managing the minecraft server.
 
   OR in game:
 
-  ```
+  ```txt
   /stop
   ```
 
@@ -214,50 +212,21 @@ Update server to a new Minecraft version.
   java -jar fabric-installer-<VERSION>.jar server -dir <SERVER_DIR> -mcversion <NEW_MINECRAFT_VERSION> -downloadMinecraft
   ```
 
-- [Update Mods](#mods)
+- [Update Mods](#install-mods)
 
----
+## Install Mods
 
-## Mods
-
-Install server-side mods that optimze and improve gameplay. All mods recommended
-on this page are compatible with the Fabric mod loader.
-
-### Useful Mods
-
-#### Optimizations
-
-- [Lithium](https://modrinth.com/mod/lithium) - game logic/server optimizations
-- [Phosphor](https://modrinth.com/mod/phosphor) - lighting engine optimizations
-
-#### Game Changes
-
-- [ServerSleep](https://modrinth.com/datapack/serversleep) - 50% sleep threshold
-- [NetherPortalFix](https://modrinth.com/mod/netherportalfix) - prevent portal
-  cross linking
-  - Deps:
-    - [Balm](https://modrinth.com/mod/balm)
-      - Deps:
-        - [Cloth Config](https://modrinth.com/mod/cloth-config)
-- [Essential Commands](https://modrinth.com/mod/essential-commands) - adds helpful commands such as `/spawn` and
-  `/home`, among others.
-- [More Mob Variants](https://modrinth.com/mod/more-mob-variants) - adds more
-  mob texture variants
-- [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) - harvest
-  crops with right click
-  - Deps:
-    - [JamLib](https://modrinth.com/mod/jamlib)
-
-### Install Mods
+Install [server-side mods](/minecraft/mods#server-side) that optimze and improve
+gameplay.
 
 Minecraft server-side mods simply need to be downloaded and placed in the
-server's `mods` folder. Follow the guides below to download and install mods
-from the command line. It is also possible to install them via [SFTP](/docs/envs/ubuntu-server/guides/#enable-sftp)
+server's `mods/` folder. Follow the guides below to download and install mods
+from the command line. It is also possible to install them via [SFTP](/computer-science/operating-systems/ubuntu-server/guides/#enable-sftp)
 if you have that setup on your host.
 
 > Be sure to also download any mod dependencies.
 
-#### Download Modrinth Mods
+### Download Modrinth Mods
 
 1. Find the mod you'd like to install on [Modrinth](https://modrinth.com).
 1. Right click on the `Download` button for the version you want, and select
@@ -265,7 +234,7 @@ if you have that setup on your host.
 1. From within the server's `mods` folder, run `wget {copied-url}`
 1. The mod should download into the `mods` folder.
 
-#### Download Curseforge Mods
+### Download Curseforge Mods
 
 1. Find the mod you'd like to install on [Curseforge](https://curseforge.com) in
    Firefox or Chrome.

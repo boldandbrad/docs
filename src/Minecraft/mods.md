@@ -1,15 +1,13 @@
 ---
-title: Minecraft - Client
-description: Minecraft Client side setup and mods.
+title: Mods
 ---
 
-## Setup
+# Mods
 
-> Coming soon.
+All mods recommended on this page are compatible with the Fabric mod loader for
+Minecraft: Java Edition.
 
----
-
-## Mods
+## Client-side
 
 A collection of Client-Side Minecraft mods that I use.
 
@@ -57,8 +55,31 @@ A collection of Client-Side Minecraft mods that I use.
 
 - [Nether Coords](https://modrinth.com/mod/nether-coords)
 
----
-
-## Resource Packs
+### Resource Packs
 
 - [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode)
+
+## Server-side
+
+### Optimizations
+
+- [Lithium](https://modrinth.com/mod/lithium) - game logic/server optimizations
+- [Phosphor](https://modrinth.com/mod/phosphor) - lighting engine optimizations
+
+### Game Changes
+
+- [ServerSleep](https://modrinth.com/datapack/serversleep) - 50% sleep threshold
+- [NetherPortalFix](https://modrinth.com/mod/netherportalfix) - prevent portal
+  cross linking
+  - Deps:
+    - [Balm](https://modrinth.com/mod/balm)
+      - Deps:
+        - [Cloth Config](https://modrinth.com/mod/cloth-config)
+- [Essential Commands](https://modrinth.com/mod/essential-commands) - adds helpful commands such as `/spawn` and
+  `/home`, among others.
+- [More Mob Variants](https://modrinth.com/mod/more-mob-variants) - adds more
+  mob texture variants
+- [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) - harvest
+  crops with right click
+  - Deps:
+    - [JamLib](https://modrinth.com/mod/jamlib)
