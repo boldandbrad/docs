@@ -3,29 +3,32 @@
 > [!note]
 > These docs are both opinionated and a work in progress. Use at your own risk.
 
-Hi 👋, my name is **boldandbrad** and this is my personal documentation site. I've
-made it open source to serve as an example for others.
+Hi 👋, my name is **boldandbrad** and this is my personal documentation site. It
+contains an incomplete record of my learnings as a software developer, as well
+as my thoughts and notes on various other topics. I've made it open source to
+make it easy to access and to serve as an example for others.
 
-My goal is to regularly update this site as I discover better tools and
-techniques. Since I *am* always trying to learn, feel free to
+My intent is to regularly update this site as I learn and explore new topics,
+tools, and techniques. Since I am always trying to learn, feel free to
 [submit an issue](https://github.com/boldandbrad/docs/issues) or a pull request
-if you have something cool to share with me. However, please understand that I
-may choose to reject them.
+if you find a problem or have something cool to share with me. However, since
+this knowledge base is largely for personal use, please understand that I may
+choose to reject them.
+
+I have made an attempt to link additional relevant resources and to site sources
+where possible, though the effort is incomplete.
 
 ## Principles
 
-I believe in the [beginner mindset](https://en.wikipedia.org/wiki/Shoshin). To
-that end, I do not claim to be an expert in any of the topics covered on this
-site and I recognize that there may be several great solutions to any given
-problem. Rather than aiming for perfect guidance, I prioritize documenting
-concepts that I often find myself searching for. In addition, my goal is to
-ensure that the documentation I produce is compatible with the following
-principles:
+I believe in the [beginner mindset](https://en.wikipedia.org/wiki/Shoshin). As a
+result, I do not claim to be an expert in any of the topics covered on this
+site. Rather than aiming for perfect guidance, I prioritize documenting topics
+that I find myself referencing often or wanting to remember. At a minimum, I
+hope to:
 
-- Be **simple**.
-- Be **consistent**.
-- Be **inclusive**.
-- Explain **why**.
+- Keep it **simple**,
+- Remain **consistent**,
+- and Explain **why**.
 
 ## Patterns
 
@@ -62,8 +65,15 @@ I tend to prefer working in compiled languages with strong type safety.
   general purpose language.
 - [Go](https://go.dev/) - A type-safe, concurrency friendly language with a
   strong standard library.
-- [TypeScript](https://www.typescriptlang.org/) - A type-safe superset of
-  JavaScript.
+- [TypeScript](https://www.typescriptlang.org/) via [Deno](https://deno.land/) -
+  A type-safe superset of JavaScript.
+
+The following are languages I've learned and used in the past but do not favor
+today:
+
+- [JavaScript](https://www.javascript.com/) via [Node](https://nodejs.org/)
+- [Java](https://www.java.com/)
+- [Python](https://www.python.org/)
 
 ### Tooling
 
