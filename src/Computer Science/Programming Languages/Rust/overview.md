@@ -1,7 +1,11 @@
 ---
-title: Rust - Conventions
-description: Rust conventions, concepts, and best practices.
+title: Overview
+order: 0
 ---
+
+# Rust - Overview
+
+## Conventions
 
 Rust conventions, concepts, and best practices.
 
@@ -19,6 +23,20 @@ Rust conventions, concepts, and best practices.
 - Expressions are valid rust lines alone that do not end with semicolons
 - Functions implicitly return the value of the last expression in the function
 
-{/* ### Ownership */}
+<!-- {/* ### Ownership */} -->
 
-{/* > Add detail here on ownership and references */}
+<!-- {/* > Add detail here on ownership and references */} -->
+
+## Resources
+
+Useful Rust resources.
+
+- [The Rust Book](https://doc.rust-lang.org/book/)
+- [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [Read Rust](https://readrust.net/)
+- [A Half Hour to Learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+- [Rust Talks - No Boilerplate](https://www.youtube.com/playlist?list=PLZaoyhMXgBzoM9bfb5pyUOT3zjnaDdSEP)
+- [This Week in Rust](https://this-week-in-rust.org/)
+- [Are we web yet?](https://www.arewewebyet.org/)
+- [Blessed.rs](https://blessed.rs/crates)
+- [The Rustup Book](https://rust-lang.github.io/rustup/index.html)
