@@ -1,6 +1,7 @@
 MD013: # allow long line length in code blocks and tables
   code_blocks: false
   tables: false
+MD024: false # allow duplicate header names
 MD025: false # allow multiple top level headers
 MD026: false # allow trailing punctuation
 MD033: false # allow inline HTML
