@@ -9,8 +9,9 @@ This document walks through installing and running a dedicated Minecraft Java
 Edition Server on an Ubuntu Server host. I prefer Ubuntu Server as host because
 it is lightweight and also not windows.
 
-The modding toolchain and server launcher used in this tutorial is [Fabric](https://fabricmc.net/).
-Fabric provides an installer that makes setup and maintenance simpler.
+The modding toolchain and server launcher used in this tutorial is
+[Fabric](https://fabricmc.net/). Fabric provides an installer that makes setup
+and maintenance simpler.
 
 ## Install
 
@@ -42,13 +43,19 @@ This guide assumes you've already completed the following:
 1. Install java:
 
    ```bash
-   sudo apt install openjdk-18-jre-headless
+   sudo apt install openjdk-21-jdk
    ```
 
 1. Download the latest [Fabric Installer](https://fabricmc.net/use/installer/):
 
    ```bash
-   wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.2/fabric-installer-0.11.2.jar
+   wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.jar
+   ```
+
+1. Create server directory:
+
+   ```bash
+   mkdir new-server
    ```
 
 1. Use Fabric Installer to install a minecraft server jar:
@@ -92,7 +99,7 @@ This guide assumes you've already completed the following:
 
    > Note: This guide assumes a dedicated host machine with at least 16GB of
    > RAM. Adjust the `-Xms` and `-Xmx` values accordingly based on your system's
-   >resources.
+   > resources.
 
 1. Reload systemctl daemon:
 
@@ -115,8 +122,8 @@ sudo ufw allow 25565
 ### Setup Port forwarding
 
 In order for the minecraft server to be accessible beyond the local network, the
-service must be forwarded to a port externally. This is typically handled in your
-router settings, which differ greatly depending on brand and model.
+service must be forwarded to a port externally. This is typically handled in
+your router settings, which differ greatly depending on brand and model.
 
 > Generalized instructions for this section are coming soon.
 
@@ -221,8 +228,9 @@ gameplay.
 
 Minecraft server-side mods simply need to be downloaded and placed in the
 server's `mods/` folder. Follow the guides below to download and install mods
-from the command line. It is also possible to install them via [SFTP](/computer-science/operating-systems/ubuntu-server/guides/#enable-sftp)
-if you have that setup on your host.
+from the command line. It is also possible to install them via
+[SFTP](/computer-science/operating-systems/ubuntu-server/guides/#enable-sftp) if
+you have that setup on your host.
 
 > Be sure to also download any mod dependencies.
 

@@ -13,7 +13,8 @@ Flash the Ubuntu Server installer to a bootable drive.
 
 <!-- TODO: Add format USB drive steps? -->
 
-1. Download the latest [Ubuntu Server LTS ISO](https://ubuntu.com/download/server)
+1. Download the latest
+   [Ubuntu Server LTS ISO](https://ubuntu.com/download/server)
 
 1. Install [balenaetcher](https://www.balena.io/etcher) drive flasher:
 
@@ -29,9 +30,8 @@ Flash the Ubuntu Server installer to a bootable drive.
 
 ## Install Ubuntu Server
 
-> [!tip]
-> Before proceeding, visit your target device's BIOS settings to check or alter
-> the boot order to allow booting from USB.
+> [!tip] Before proceeding, visit your target device's BIOS settings to check or
+> alter the boot order to allow booting from USB.
 
 1. Plugin the installation media USB drive to the target device.
 

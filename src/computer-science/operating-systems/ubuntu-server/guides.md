@@ -77,9 +77,8 @@ Enable secure FTP on Ubuntu Server.
 Setup a static IP address in Ubuntu Server 17+ using the `netplan` utility to
 perform network configurations.
 
-> [!tip]
-> It is recommended that you also reserve a static IP address for the machine in
-> your router settings.
+> [!tip] It is recommended that you also reserve a static IP address for the
+> machine in your router settings.
 
 1. Verify which network interface to configure:
 
@@ -111,8 +110,8 @@ perform network configurations.
            addresses: [8.8.8.8, 1.1.1.1]
    ```
 
-   > Older ubuntu/netplan versions may use the deprecated `gateway4` keyword
-   > and syntax in place of `routes`.
+   > Older ubuntu/netplan versions may use the deprecated `gateway4` keyword and
+   > syntax in place of `routes`.
 
 4. Apply changes:
 
