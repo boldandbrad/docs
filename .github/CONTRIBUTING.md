@@ -15,8 +15,8 @@ Pleae feel free to...
 
 - [Open an issue](https://github.com/boldandbrad/docs/issues) to let me know
   about typos, unclear documentation, or suggested technologies and practices.
-- Submit a pull request to address an open issue or to fix obvious problems
-  with the site or its contents.
+- Submit a pull request to address an open issue or to fix obvious problems with
+  the site or its contents.
 
 ## About this repo
 
@@ -40,7 +40,7 @@ setup.
 
 #### Useful commands
 
-| Command                          | Action                                           |
-| :------------------------------- | :----------------------------------------------- |
-| `deno task serve`                | Start local dev server at `localhost:3000`       |
-| `deno task build`                | Build production site to `./_site/` via deno     |
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `deno task serve` | Start local dev server at `localhost:3000`   |
+| `deno task build` | Build production site to `./_site/` via deno |

@@ -1,7 +1,7 @@
 # boldandbrad docs
 
-> [!note]
-> These docs are both opinionated and a work in progress. Use at your own risk.
+> [!note] These docs are both opinionated and a work in progress. Use at your
+> own risk.
 
 Hi 👋, my name is **boldandbrad** and this is my personal documentation site. It
 contains an incomplete record of my learnings as a software developer, as well
@@ -84,5 +84,4 @@ today:
 
 ---
 
-Copyright © 2020-present Bradley Wojcik. Powered by
-  [Lume](https://lume.land/).
+Copyright © 2020-present Bradley Wojcik. Powered by [Lume](https://lume.land/).

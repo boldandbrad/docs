@@ -11,40 +11,42 @@ to install and manage rust tooling.
 
 ## Tooling Overview
 
-- [`rustup`](https://rust-lang.github.io/rustup/) - Install Rust and rust tooling
+- [`rustup`](https://rust-lang.github.io/rustup/) - Install Rust and rust
+  tooling
 - [`rustc`](https://doc.rust-lang.org/book/ch01-01-installation.html) - Rust
   language compiler
 - [`rustfmt`](https://rust-lang.github.io/rustfmt/?version=v1.5.1&search=) -
   Rust formatter and linter
-- [`cargo`](https://doc.rust-lang.org/stable/cargo/) - Rust build and packaging system
+- [`cargo`](https://doc.rust-lang.org/stable/cargo/) - Rust build and packaging
+  system
 
 ## Install Rustup
 
 - macOS:
 
-    1. Install rustup installer with [homebrew](https://brew.sh)
+  1. Install rustup installer with [homebrew](https://brew.sh)
 
-        ```zsh
-        brew install rustup-init
-        ```
+     ```zsh
+     brew install rustup-init
+     ```
 
-    2. Initialize rustup
+  2. Initialize rustup
 
-        ```zsh
-        rustup-init
-        ```
+     ```zsh
+     rustup-init
+     ```
 
-    3. Ensure `~/.zshrc` contains `. "$HOME/.cargo/env"`
+  3. Ensure `~/.zshrc` contains `. "$HOME/.cargo/env"`
 
-    4. Restart shell for changes to take effect
+  4. Restart shell for changes to take effect
 
 - Windows:
 
-    > Coming soon.
+  > Coming soon.
 
 - Linux:
 
-    > Coming soon.
+  > Coming soon.
 
 ## Repo Setup
 

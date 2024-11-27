@@ -10,8 +10,8 @@ others. I do not claim to be an expert on any of the covered topics, nor do I
 always follow industry best practices. **Use this knowledge base at your own
 risk**.
 
-My goal is that at the very least you'll find the knowledge contained here to
-be compatible with the following principles:
+My goal is that at the very least you'll find the knowledge contained here to be
+compatible with the following principles:
 
 - Be **consistent**.
 - Be **inclusive**.

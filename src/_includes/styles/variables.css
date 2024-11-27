@@ -1,0 +1,56 @@
+:root {
+  --font-display: "Inter", var(--font-ui);
+  --font-ui:
+    "Anonymous Pro", "Inter", "Inter-fallback", system-ui, -apple-system,
+    "Segue UI", sans-serif;
+  --font-code: "Anonymous Pro", "Consolas", monospace;
+
+  --text-display-size: clamp(30px, 10vw, 75px);
+  --text-display-height: 0.95;
+  --text-display: 700 var(--text-display-size)/var(--text-display-height) var(
+    --font-display
+  );
+  --text-display-spacing: -0.045em;
+  --text-heading-size: clamp(20px, 8vw, 50px);
+  --text-heading: 700 var(--text-heading-size)/1.1 var(--font-display);
+  --text-heading-spacing: -0.03em;
+  --text-title-size: clamp(20px, 6vw, 30px);
+  --text-title: 600 var(--text-title-size)/1.2 var(--font-display);
+  --text-title-spacing: -0.03em;
+  --text-body-size: clamp(16px, 4vw, 20px);
+  --text-body: var(--text-body-size)/1.65 var(--font-ui);
+  --text-body-bold: 600 var(--text-body-size)/1.6 var(--font-ui);
+  --text-body-spacing: -0.015em;
+  --text-caption: 15px/1.6 var(--font-ui);
+  --text-caption-bold: 600 15px/1.6 var(--font-ui);
+  --text-caption-mini: 13px/1.6 var(--font-ui);
+  --text-caption-mini-bold: 600 13px/1.6 var(--font-ui);
+  --text-code: 16px/1.6 var(--font-code);
+
+  --border-radius-small: 5px;
+  --border-radius: 10px;
+
+  --margin: max(25px, 5vw);
+  --max-width: 1200px;
+  --column-gap-0: 10px;
+  --column-gap-1: 25px;
+  --column-gap-2: 50px;
+  --column-gap-3: 100px;
+  --row-gap-0: 25px;
+  --row-gap-1: clamp(20px, 5vh, 50px);
+  --row-gap-2: clamp(40px, 10vh, 100px);
+  --row-gap-3: clamp(60px, 15vh, 150px);
+  --row-gap-4: clamp(80px, 20vh, 200px);
+
+  --pagefind-ui-scale: 0.75;
+  --pagefind-ui-primary: var(--ctp-mocha-mauve);
+  --pagefind-ui-text: var(--ctp-mocha-text);
+  --pagefind-ui-background: var(--ctp-mocha-surface0);
+  --pagefind-ui-border: var(--ctp-mocha-surface2);
+  --pagefind-ui-tag: var(--ctp-mocha-red);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 10px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: "Anonymous Pro";
+}

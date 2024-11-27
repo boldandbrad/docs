@@ -14,8 +14,10 @@ A collection of Client-Side Minecraft mods that I use.
 ### Libraries
 
 - [Quilted Fabric API and Quilt Standard Libraries](https://modrinth.com/mod/qsl)
-- [MaLiLib](https://www.curseforge.com/minecraft/mc-mods/malilib) - (dep of MiniHUD)
-- [Cloth Config](https://modrinth.com/mod/cloth-config) - configuration screen library
+- [MaLiLib](https://www.curseforge.com/minecraft/mc-mods/malilib) - (dep of
+  MiniHUD)
+- [Cloth Config](https://modrinth.com/mod/cloth-config) - configuration screen
+  library
 
 ### Optimizations
 

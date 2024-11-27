@@ -1,0 +1,6 @@
+@import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
+
+@import "styles/variables.css";
+@import "styles/reset.css";
+
+@import "styles/components/navbar.css";
