@@ -3,11 +3,19 @@ import lume from "lume/mod.ts";
 import googleFonts from "lume/plugins/google_fonts.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import postcss from "lume/plugins/postcss.ts";
+import toc from "https://deno.land/x/lume_markdown_plugins@v0.6.0/toc/mod.ts";
+
+const markdown = {
+  plugins: [toc],
+  options: {
+    linkify: true,
+  },
+};
 
 const site = lume({
   src: "./src",
   // location: new URL("https://docs.boldandbrad.dev"),
-});
+}, { markdown });
 
 site.use(googleFonts({
   fonts:

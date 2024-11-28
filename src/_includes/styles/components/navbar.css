@@ -19,7 +19,7 @@
   display: flex;
   align-self: center;
   align-items: center;
-  color: var(--ctp-mocha-text);
+  color: var(--ctp-mocha-blue);
   column-gap: 10px;
   text-decoration: none;
   font: var(--text-body-bold);

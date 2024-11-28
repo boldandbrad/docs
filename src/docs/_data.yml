@@ -1,0 +1,5 @@
+layout: layouts/docs.vto
+main_menu: docs
+docs_menu:
+  - title: Minecraft
+    id: minecraft

@@ -1,0 +1,23 @@
+{{ if toc.length }}
+<details class="toc">
+<summary>On this page</summary>
+<nav>
+  <ol>
+    {{ for item of toc }}
+    <li>
+      <a href="#{{ item.slug }}">{{ item.text }}</a>
+      {{ if item.children.length }}
+      <ul>
+        {{ for child of item.children }}
+        <li>
+          <a href="#{{ child.slug }}">{{ child.text }}</a>
+        </li>
+        {{ /for }}
+      </ul>
+      {{ /if }}
+    </li>
+    {{ /for }}
+  </ol>
+</nav>
+</details>
+{{ /if }}
