@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <title>{{ title }} - docs.boldandbrad.dev</title>
     <link rel="stylesheet" href="/styles/main.css">
+    {{ if it.page_css }}
+      <link rel="stylesheet" href="/styles/pages/{{ page_css }}">
+    {{ /if }}
   </head>
   <body>
     {{ include "templates/navbar.vto" }}

@@ -1,5 +1,9 @@
 layout: layouts/docs.vto
 main_menu: docs
 docs_menu:
+  - title: Computer Science
+    id: computer-science
+  - title: Lego
+    id: lego
   - title: Minecraft
     id: minecraft
