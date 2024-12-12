@@ -165,3 +165,18 @@ Shutdown server:
 ```bash
 sudo shutdown now
 ```
+
+### Scheduled Reboots
+
+Setup automated reboots with crontab:
+
+```bash
+sudo crontab -e
+```
+
+Append the following line to automatically shutdown the system daily at 1am UTC
+and reboot it 5 minutes later:
+
+```txt
+0 1 * * * /sbin/shutdown -r +5
+```
