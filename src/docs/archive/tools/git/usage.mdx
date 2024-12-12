@@ -15,7 +15,7 @@ Create a new branch from the main branch for each independent feature or fix.
 
 ## Commits
 
-Commit early and often. Squash commits.
+Commit early and often. Squash commits into atomic operations.
 
 ### Amend Commit Message
 
@@ -54,17 +54,67 @@ git push origin :refs/tags/old_tag
 git tag -d old_tag
 ```
 
+## Squash Commits
+
+### With rebase
+
+Squash last 4 commits:
+
+```sh
+git rebase -i HEAD~4
+```
+
+Then in the interactive editor, change "pick" to "squash" for each commit except the first one. Save and close the file.
+
+If prompted to edit the commit message, do so and save and exit.
+
+### Without rebase
+
+Squash last 4 commits:
+
+```sh
+git reset --soft HEAD~4
+git commit -m <NEW_COMMIT_MESSAGE>
+```
+
 ## Patches
 
 > Coming soon.
 
 ## Stashing
 
-> Coming soon.
+Stash current changes:
+
+```sh
+git stash
+```
+
+View list of stashes:
+
+```sh
+git stash list
+```
+
+Copy changes in stash to working tree (optionally supply a specific stash name):
+
+```sh
+git stash apply
+```
+
+Move changes in stash to working tree (optionally supply a specific stash name):
+
+```sh
+git stash pop
+```
 
 ## Rebasing & Merging
 
-> Coming soon.
+Rebase to main, optionally replace `upstream` with `origin`:
+
+```sh
+git rebase upstream/main
+git push --force
+```
 
 ## Conflict Resolution
 
