@@ -250,7 +250,8 @@ git merge <branch | SHA>
 ```
 
 Move the commits of the current branch on top of the commits of another branch
-(bring the current branch up-to-date with reality).
+(bring the current branch up-to-date with reality). Git does this by checking
+out the source branch and replaying your commits on top of it.
 
 ```sh
 git rebase <branch | SHA>
@@ -270,8 +271,12 @@ git push --force
 In the event of a conflict, use `git status` to see which files have been
 modified in both places and need to be resolved.
 
-Then, open the conflicting files in a text editor and resolve the issue by
-choosing the correct state to proceed with.
+### Resolve with Merge
+
+Usually a result of `git pull`
+
+Open the conflicting files in a text editor and resolve the issue by choosing
+the correct state to proceed with.
 
 Once all conflicting files have been resolved, stage and commit the changes to
 complete the merge.
@@ -281,6 +286,15 @@ Or, avoid the conflict by aborting the merge:
 ```sh
 git merge --abort
 ```
+
+### Resolve with Rebase
+
+Usually a result of `git pull --rebase`
+
+Open the conflicting files in a text editor and resolve the issue by choosing
+the correct state to proceed with.
+
+Use `git rebase --continue`
 
 ## Pulling
 
